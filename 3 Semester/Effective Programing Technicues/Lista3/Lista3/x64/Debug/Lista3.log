@@ -1,0 +1,5 @@
+﻿  Interface.cpp
+  Node.cpp
+C:\Users\user\Desktop\SEM 3\TEP\Laby\Lista3\Node.cpp(121,29): warning C4267: "return": konwersja z "size_t" do "int", możliwa utrata danych
+  Generowanie kodu...
+  Lista3.vcxproj -> C:\Users\user\Desktop\SEM 3\TEP\Laby\Lista3\x64\Debug\Lista3.exe

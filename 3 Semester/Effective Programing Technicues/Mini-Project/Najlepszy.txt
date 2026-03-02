@@ -1,0 +1,145 @@
+import matplotlib.pyplot as plt
+
+def plot_routes():
+    # Wspolrzedne (id_wezla: (x, y))
+    coords = {
+        0: (82, 76),
+        1: (96, 44),
+        2: (50, 5),
+        3: (49, 8),
+        4: (13, 7),
+        5: (29, 89),
+        6: (58, 30),
+        7: (84, 39),
+        8: (14, 24),
+        9: (2, 39),
+        10: (3, 82),
+        11: (5, 10),
+        12: (98, 52),
+        13: (84, 25),
+        14: (61, 59),
+        15: (1, 65),
+        16: (88, 51),
+        17: (91, 2),
+        18: (19, 32),
+        19: (93, 3),
+        20: (50, 93),
+        21: (98, 14),
+        22: (5, 42),
+        23: (42, 9),
+        24: (61, 62),
+        25: (9, 97),
+        26: (80, 55),
+        27: (57, 69),
+        28: (23, 15),
+        29: (20, 70),
+        30: (85, 60),
+        31: (98, 5),
+    }
+
+    plt.plot(coords[0][0], coords[0][1], 'rs', markersize=10, label='Depot')
+    for i in coords:
+        if i != 0:
+            plt.plot(coords[i][0], coords[i][1], 'bo', markersize=5)
+
+    # Generowanie Tras
+    # Trasa Pojazdu 1
+    x = [coords[0][0]]
+    y = [coords[0][1]]
+    x.append(coords[21][0])
+    y.append(coords[21][1])
+    x.append(coords[31][0])
+    y.append(coords[31][1])
+    x.append(coords[19][0])
+    y.append(coords[19][1])
+    x.append(coords[17][0])
+    y.append(coords[17][1])
+    x.append(coords[13][0])
+    y.append(coords[13][1])
+    x.append(coords[7][0])
+    y.append(coords[7][1])
+    x.append(coords[26][0])
+    y.append(coords[26][1])
+    x.append(coords[0][0])
+    y.append(coords[0][1])
+    plt.plot(x, y, color='b', linestyle='-', linewidth=1.5, label='Trasa 1')
+    # Trasa Pojazdu 2
+    x = [coords[0][0]]
+    y = [coords[0][1]]
+    x.append(coords[24][0])
+    y.append(coords[24][1])
+    x.append(coords[18][0])
+    y.append(coords[18][1])
+    x.append(coords[8][0])
+    y.append(coords[8][1])
+    x.append(coords[9][0])
+    y.append(coords[9][1])
+    x.append(coords[22][0])
+    y.append(coords[22][1])
+    x.append(coords[0][0])
+    y.append(coords[0][1])
+    plt.plot(x, y, color='g', linestyle='-', linewidth=1.5, label='Trasa 2')
+    # Trasa Pojazdu 3
+    x = [coords[0][0]]
+    y = [coords[0][1]]
+    x.append(coords[14][0])
+    y.append(coords[14][1])
+    x.append(coords[28][0])
+    y.append(coords[28][1])
+    x.append(coords[11][0])
+    y.append(coords[11][1])
+    x.append(coords[4][0])
+    y.append(coords[4][1])
+    x.append(coords[23][0])
+    y.append(coords[23][1])
+    x.append(coords[3][0])
+    y.append(coords[3][1])
+    x.append(coords[2][0])
+    y.append(coords[2][1])
+    x.append(coords[6][0])
+    y.append(coords[6][1])
+    x.append(coords[0][0])
+    y.append(coords[0][1])
+    plt.plot(x, y, color='c', linestyle='-', linewidth=1.5, label='Trasa 3')
+    # Trasa Pojazdu 4
+    x = [coords[0][0]]
+    y = [coords[0][1]]
+    x.append(coords[27][0])
+    y.append(coords[27][1])
+    x.append(coords[29][0])
+    y.append(coords[29][1])
+    x.append(coords[15][0])
+    y.append(coords[15][1])
+    x.append(coords[10][0])
+    y.append(coords[10][1])
+    x.append(coords[25][0])
+    y.append(coords[25][1])
+    x.append(coords[5][0])
+    y.append(coords[5][1])
+    x.append(coords[20][0])
+    y.append(coords[20][1])
+    x.append(coords[0][0])
+    y.append(coords[0][1])
+    plt.plot(x, y, color='m', linestyle='-', linewidth=1.5, label='Trasa 4')
+    # Trasa Pojazdu 5
+    x = [coords[0][0]]
+    y = [coords[0][1]]
+    x.append(coords[12][0])
+    y.append(coords[12][1])
+    x.append(coords[1][0])
+    y.append(coords[1][1])
+    x.append(coords[16][0])
+    y.append(coords[16][1])
+    x.append(coords[30][0])
+    y.append(coords[30][1])
+    x.append(coords[0][0])
+    y.append(coords[0][1])
+    plt.plot(x, y, color='y', linestyle='-', linewidth=1.5, label='Trasa 5')
+
+    plt.title('Wizualizacja VRP - Fitness: 848.545')
+    plt.legend(loc='upper right', bbox_to_anchor=(1.15, 1))
+    plt.grid(True)
+    plt.show()
+
+if __name__ == '__main__':
+    plot_routes()

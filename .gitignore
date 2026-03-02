@@ -1,0 +1,24 @@
+# Foldery systemowe i środowisk (IDE)
+.vscode
+.idea
+.suo
+.user
+
+# CC++  C#
+.exe
+.o
+.obj
+bin
+obj
+
+# Python
+__pycache__
+venv
+env
+
+# Node.js  Web
+node_modules
+
+# Java
+.class
+target

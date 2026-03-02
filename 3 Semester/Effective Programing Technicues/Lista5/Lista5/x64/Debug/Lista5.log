@@ -1,0 +1,8 @@
+﻿  AlgebraicTree.cpp
+  Error.cpp
+  Interface.cpp
+  main.cpp
+  Node.cpp
+C:\Users\user\Desktop\SEM 3\TEP\Laby\Lista5\Node.cpp(121,29): warning C4267: "return": konwersja z "size_t" do "int", możliwa utrata danych
+  Generowanie kodu...
+  Lista5.vcxproj -> C:\Users\user\Desktop\SEM 3\TEP\Laby\Lista5\x64\Debug\Lista5.exe
